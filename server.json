@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.postel/postel",
+  "title": "Postel",
+  "description": "Draft, schedule and publish X (Twitter) and LinkedIn posts in your own voice.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.postel.app/postel-mcp-server",
+  "repository": {
+    "url": "https://github.com/robinfaraj/postel-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/robinfaraj/postel-mcp/main/assets/icon.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.postel.app/api/mcp"
+    }
+  ]
+}

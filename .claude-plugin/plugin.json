@@ -1,0 +1,24 @@
+{
+  "name": "postel",
+  "displayName": "Postel",
+  "version": "1.0.0",
+  "description": "Draft X (Twitter) and LinkedIn posts in your own voice, then schedule or publish them through your Postel account.",
+  "author": {
+    "name": "Postel",
+    "email": "robin.faraj@postel.app",
+    "url": "https://www.postel.app"
+  },
+  "homepage": "https://www.postel.app/postel-mcp-server",
+  "repository": "https://github.com/robinfaraj/postel-mcp",
+  "license": "MIT",
+  "keywords": [
+    "social-media",
+    "twitter",
+    "x",
+    "linkedin",
+    "scheduling",
+    "content",
+    "writing",
+    "mcp"
+  ]
+}

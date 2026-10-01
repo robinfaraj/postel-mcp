@@ -1,0 +1,26 @@
+{
+  "name": "postel",
+  "owner": {
+    "name": "Postel",
+    "email": "robin.faraj@postel.app",
+    "url": "https://www.postel.app"
+  },
+  "metadata": {
+    "description": "Postel's plugin for drafting, scheduling and publishing X and LinkedIn posts from Claude."
+  },
+  "plugins": [
+    {
+      "name": "postel",
+      "source": "./",
+      "description": "Draft X (Twitter) and LinkedIn posts in your own voice, then schedule or publish them through your Postel account.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Postel",
+        "url": "https://www.postel.app"
+      },
+      "category": "marketing",
+      "homepage": "https://www.postel.app/postel-mcp-server",
+      "keywords": ["social-media", "twitter", "x", "linkedin", "scheduling"]
+    }
+  ]
+}

@@ -13,7 +13,7 @@
       "name": "postel",
       "source": "./",
       "description": "Draft X (Twitter) and LinkedIn posts in your own voice, then schedule or publish them through your Postel account.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Postel",
         "url": "https://www.postel.app"

@@ -3,7 +3,7 @@ name: postel-writing
 description: Use when the user wants to research high-performing X posts, draft posts or threads for X (Twitter) or LinkedIn in their own voice, or save, schedule or publish posts through their Postel account.
 ---
 
-Postel is a writing and scheduling tool for X (Twitter) and LinkedIn. This plugin connects to the user's Postel workspace through the `postel` MCP server. All tools need the user to be signed in; if a tool reports missing authorization, ask the user to run `/mcp` and sign in to Postel. Never ask for passwords, API keys or tokens in the conversation.
+Postel is a writing and scheduling tool for X (Twitter) and LinkedIn. This plugin connects to the user's Postel workspace through the `postel` MCP server. Research with `search-viral-tweets` works without signing in. Every other tool needs the user's Postel account; if a tool asks to connect an account, ask the user to run `/mcp` and sign in to Postel. Never ask for passwords, API keys or tokens in the conversation.
 
 ## Research
 

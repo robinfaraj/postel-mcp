@@ -15,7 +15,7 @@ This repository holds the public metadata for that server: the Claude plugin, th
 
 ## Setup
 
-You need a Postel account. Connect your X account, your LinkedIn profile or both under Settings > Channels.
+Post research (`search-viral-tweets`) works without an account. For everything else you need a Postel account; connect your X account, your LinkedIn profile or both under Settings > Channels.
 
 ### Claude Code plugin
 
@@ -85,7 +85,7 @@ Any client that supports remote MCP servers over Streamable HTTP works. Point it
 |---|---|
 | `generate-post` | Writes an X post, an X thread or a LinkedIn post in your voice and saves it as a draft |
 | `refine-post` | Suggests a rewrite of a draft from your instructions |
-| `search-viral-tweets` | Finds high-performing X posts by topic in Postel's library |
+| `search-viral-tweets` | Finds high-performing X posts by topic in Postel's library. No sign-in needed |
 
 ### Context
 
@@ -115,7 +115,7 @@ Any client that supports remote MCP servers over Streamable HTTP works. Point it
 
 ## Plans and limits
 
-- Drafting, research and reading posts work on any plan. AI generation counts against your monthly quota.
+- Research needs no account. Drafting and reading posts work on any plan, and AI generation counts against your monthly quota.
 - Scheduling and publishing need a paid plan or trial. See [pricing](https://www.postel.app/#pricing).
 - API keys are limited to 60 requests per minute.
 

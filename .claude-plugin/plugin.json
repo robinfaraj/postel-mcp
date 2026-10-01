@@ -9,6 +9,7 @@
     "url": "https://www.postel.app"
   },
   "homepage": "https://www.postel.app/postel-mcp-server",
+  "privacyPolicyUrl": "https://www.postel.app/en/legal/privacy-policy",
   "repository": "https://github.com/robinfaraj/postel-mcp",
   "license": "MIT",
   "keywords": [

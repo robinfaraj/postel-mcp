@@ -1,4 +1,4 @@
-# Postel MCP server
+# Postel MCP server for X (Twitter) and LinkedIn
 
 Draft, schedule and publish X (Twitter) and LinkedIn posts from Claude, Cursor and other MCP clients.
 

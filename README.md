@@ -73,10 +73,12 @@ Any client that supports remote MCP servers over Streamable HTTP works. Point it
 |---|---|
 | `list-posts` | Lists posts, with an optional status filter |
 | `get-post` | Returns one post by ID |
-| `create-post` | Saves text as a new draft |
-| `update-post` | Edits a draft |
+| `create-post` | Saves text as a new X or LinkedIn draft, with optional images or video from public URLs and an optional LinkedIn first comment |
+| `create-posts` | Saves up to 25 posts in one call, each with its own platform, media and first comment, and optionally schedules each one |
+| `attach-media` | Downloads an image or video from a public URL and adds it to a draft |
+| `update-post` | Edits the text of a draft |
 | `delete-post` | Deletes a post and cancels its schedule |
-| `schedule-post` | Schedules a draft for a future time |
+| `schedule-post` | Schedules a draft for a future time, optionally setting a LinkedIn first comment |
 | `publish-post` | Publishes a draft now |
 
 ### Writing and research
@@ -93,14 +95,15 @@ Any client that supports remote MCP servers over Streamable HTTP works. Point it
 |---|---|
 | `list-brands` | Lists your brands and topics |
 | `get-brand-sources` | Returns background sources for a brand |
-| `get-x-profiles` | Returns your voice profiles |
+| `get-x-profiles` | Returns your X and LinkedIn voice profiles |
 | `get-schedule` | Returns your weekly posting slots and timezone |
-| `get-usage` | Shows usage and plan limits |
+| `get-usage` | Shows your AI credit balance and plan |
 
 ## Example prompts
 
 - "Find viral posts about bootstrapping a SaaS and tell me what the best hooks have in common."
-- "Draft a LinkedIn post about the pricing change we shipped this week."
+- "Draft a LinkedIn post about the pricing change we shipped this week, and put the changelog link in the first comment."
+- "Turn these three notes into LinkedIn drafts and attach this screenshot to the first one."
 - "Write a thread about what we learned from our last launch."
 - "Show me what is scheduled for next week."
 - "Schedule that post for Tuesday at 9am Berlin time."
@@ -110,12 +113,15 @@ Any client that supports remote MCP servers over Streamable HTTP works. Point it
 - It does not read your X timeline, mentions or DMs, or your LinkedIn feed or messages.
 - It does not like, reply, follow, comment or send connection requests.
 - LinkedIn posts go to personal profiles only, not company pages.
-- Images, video, documents and LinkedIn first comments are added in the Postel editor, not through MCP.
+- Images and video are added from public URLs. Uploading a local file and adding documents (LinkedIn PDF carousels) happen in the Postel editor.
+- First comments are LinkedIn only. X posts have no first comment.
+- Threads are X only. `generate-post` writes them; `create-post` saves a single post.
 - Research searches Postel's indexed library of X posts, not live X.
 
 ## Plans and limits
 
-- Research needs no account. Drafting and reading posts work on any plan, and AI generation counts against your monthly quota.
+- Research needs no account. Drafting and reading posts work on any plan. `generate-post` and `refine-post` use 1 AI credit each.
+- If your workspace requires approval, scheduling submits the post for approval instead. An owner or admin approves it in Postel.
 - Scheduling and publishing need a paid plan or trial. See [pricing](https://www.postel.app/#pricing).
 - API keys are limited to 60 requests per minute.
 

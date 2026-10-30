@@ -41,14 +41,32 @@ Run `/mcp` to sign in. Add `--scope user` to use it in every project. To use an 
 claude mcp add --transport http postel https://www.postel.app/api/mcp --header "Authorization: Bearer pstl_YOUR_API_KEY"
 ```
 
-### Cursor, VS Code, Windsurf and other clients
+### Cursor, Windsurf and other clients
 
-Add this to your MCP config (`~/.cursor/mcp.json`, `.cursor/mcp.json`, or your client's equivalent):
+Add this to your MCP config (`~/.cursor/mcp.json`, `.cursor/mcp.json`, or your client's equivalent; Windsurf uses `serverUrl` instead of `url`):
 
 ```json
 {
   "mcpServers": {
     "postel": {
+      "url": "https://www.postel.app/api/mcp",
+      "headers": {
+        "Authorization": "Bearer pstl_YOUR_API_KEY"
+      }
+    }
+  }
+}
+```
+
+### VS Code
+
+Add this to `.vscode/mcp.json`:
+
+```json
+{
+  "servers": {
+    "postel": {
+      "type": "http",
       "url": "https://www.postel.app/api/mcp",
       "headers": {
         "Authorization": "Bearer pstl_YOUR_API_KEY"

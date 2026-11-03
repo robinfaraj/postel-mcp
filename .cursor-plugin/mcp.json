@@ -1,0 +1,6 @@
+{
+  "postel": {
+    "type": "http",
+    "url": "https://www.postel.app/api/mcp"
+  }
+}

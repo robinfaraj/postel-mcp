@@ -52,7 +52,7 @@
 | Gemini CLI | `gemini extensions install https://github.com/robinfaraj/postel-mcp` |
 | Codex CLI | `codex mcp add postel --url https://www.postel.app/api/mcp` |
 | ChatGPT | Custom connector with developer mode, [see below](#chatgpt) |
-| Skills (Claude Code, Codex, Cursor and others) | `npx skills add robinfaraj/postel-mcp` |
+| Skills (Codex, Cursor, OpenClaw and 70+ agents) | `npx skills add robinfaraj/postel-mcp` |
 | Anything else | Point it at `https://www.postel.app/api/mcp` |
 
 Before your first post, connect your networks in Postel under **Settings > Channels**. Research works right away; drafting, scheduling and publishing need a Postel account.
@@ -132,9 +132,12 @@ Any client that supports remote MCP servers over Streamable HTTP works. Point it
 
 Create an API key in Postel under **Settings > API Keys**. Keys start with `pstl_` and belong to one workspace.
 
-### Agent skill
+### Agent skills
 
-`skills/postel-writing` is a plain [Agent Skill](https://agentskills.io) for any agent that reads `SKILL.md` files. It covers how to research, write for each network, and confirm before scheduling or publishing.
+Two plain [Agent Skills](https://agentskills.io) for any agent that reads `SKILL.md` files:
+
+- `postel-writing` (in `skills/`): how to research, write for each network and confirm before scheduling or publishing, using the MCP server above.
+- `postel-api` (in `.agents/skills/`): the same workflow over Postel's REST API with `curl` and a `POSTEL_API_KEY`, for agents without MCP support.
 
 ```bash
 npx skills add robinfaraj/postel-mcp

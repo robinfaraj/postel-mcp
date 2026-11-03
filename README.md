@@ -18,8 +18,9 @@
 </p>
 
 <p align="center">
-  <a href="https://cursor.com/en/install-mcp?name=postel&config=eyJ1cmwiOiJodHRwczovL3d3dy5wb3N0ZWwuYXBwL2FwaS9tY3AifQ=="><img alt="Add to Cursor" src="https://cursor.com/deeplink/mcp-install-dark.svg" height="32"></a>
-  <a href="https://vscode.dev/redirect/mcp/install?name=postel&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A//www.postel.app/api/mcp%22%7D"><img alt="Install in VS Code" src="https://img.shields.io/badge/VS_Code-Install_Postel-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white" height="32"></a>
+  <a href="https://claude.ai/directory/connectors/www-postel-app"><img alt="Connect in Claude" src="https://img.shields.io/badge/Claude-Connect_Postel-d97757?style=for-the-badge&logo=claude&logoColor=white"></a>
+  <a href="https://cursor.com/en/install-mcp?name=postel&config=eyJ1cmwiOiJodHRwczovL3d3dy5wb3N0ZWwuYXBwL2FwaS9tY3AifQ=="><img alt="Add to Cursor" src="https://img.shields.io/badge/Cursor-Add_Postel-1d1c23?style=for-the-badge&logo=cursor&logoColor=white"></a>
+  <a href="https://vscode.dev/redirect/mcp/install?name=postel&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A//www.postel.app/api/mcp%22%7D"><img alt="Install in VS Code" src="https://img.shields.io/badge/VS_Code-Install_Postel-0098FF?style=for-the-badge&logo=visualstudiocode&logoColor=white"></a>
 </p>
 
 <p align="center">

@@ -1,7 +1,7 @@
 ---
 name: postel-api
 description: Use when the user wants to find what's going viral in their niche, write their own version in their voice, or draft, schedule or publish posts to X (Twitter), LinkedIn, Bluesky or Mastodon through their Postel account, in an agent without MCP. Calls Postel's REST API with curl and a POSTEL_API_KEY.
-version: 1.1.0
+version: 1.1.1
 metadata:
   openclaw:
     homepage: https://github.com/robinfaraj/postel-mcp
@@ -20,7 +20,7 @@ Use this skill in agents that call HTTP APIs. In a client with MCP support, the 
 
 ## Account, key and cost
 
-- The user needs a Postel account (https://www.postel.app). Plans start with a 7-day trial for $1; scheduling and publishing need a paid plan. Writing (`/v1/posts/generate`, `/v1/viral/takes`) uses Postel AI credits: 1 per draft.
+- The user needs a Postel account (https://www.postel.app/?utm_source=clawhub&utm_medium=listing&utm_campaign=agent-distribution). Plans start with a 7-day trial for $1; scheduling and publishing need a paid plan. Writing (`/v1/posts/generate`, `/v1/viral/takes`) uses Postel AI credits: 1 per draft.
 - The user creates an API key in Postel under Settings > API Keys and sets it as `POSTEL_API_KEY`. Keys start with `pstl_` and belong to one workspace. Never ask the user to paste the key into the chat, and never print it.
 - Networks are connected in Postel under Settings > Channels. `GET /v1/channels` shows which are connected.
 

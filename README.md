@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.postel.app">
+  <a href="https://www.postel.app/?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/postel-logo-dark.png">
       <img src="assets/postel-logo-light.png" alt="Postel" width="220">
@@ -27,7 +27,7 @@
   <img src="assets/claude-demo.gif" alt="Claude finds viral posts about SaaS pricing with Postel, writes a LinkedIn and an X post in the user's voice, and schedules both into their posting slots" width="880">
 </p>
 
-[Postel](https://www.postel.app) is an AI writing and scheduling tool for people who post as themselves: founders, consultants and creators. This repository holds the public side of its hosted MCP server: setup for every client, the Claude Code plugin, the Gemini CLI extension, an agent skill and the MCP Registry entry. The server runs at `https://www.postel.app/api/mcp`; there is nothing to install or host.
+[Postel](https://www.postel.app/?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution) is an AI writing and scheduling tool for people who post as themselves: founders, consultants and creators. This repository holds the public side of its hosted MCP server: setup for every client, the Claude Code plugin, the Gemini CLI extension, an agent skill and the MCP Registry entry. The server runs at `https://www.postel.app/api/mcp`; there is nothing to install or host.
 
 - **Start from what's working.** Postel keeps a library of posts that took off for real creators, scored by how far each one beat its author's usual reach. Your assistant searches it by topic and shows you why the top ones worked.
 - **Sound like you.** Drafts come from your voice profile (built from your own X or LinkedIn posts) and the facts you saved, not from a generic template.
@@ -124,7 +124,7 @@ codex mcp login postel
 
 ### ChatGPT
 
-In ChatGPT, open **Settings > Apps & Connectors > Advanced settings**, turn on **Developer mode**, then **Create** a connector with the URL `https://www.postel.app/api/mcp` and OAuth sign-in. OpenAI decides which plans can use custom connectors that write (draft, schedule, publish); at the time of writing that is Business, Enterprise and Edu workspaces, while research works more widely. Step-by-step: [connect ChatGPT to LinkedIn](https://www.postel.app/connect-chatgpt-to-linkedin) and [to X](https://www.postel.app/connect-chatgpt-to-x).
+In ChatGPT, open **Settings > Apps & Connectors > Advanced settings**, turn on **Developer mode**, then **Create** a connector with the URL `https://www.postel.app/api/mcp` and OAuth sign-in. OpenAI decides which plans can use custom connectors that write (draft, schedule, publish); at the time of writing that is Business, Enterprise and Edu workspaces, while research works more widely. Step-by-step: [connect ChatGPT to LinkedIn](https://www.postel.app/connect-chatgpt-to-linkedin?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution) and [to X](https://www.postel.app/connect-chatgpt-to-x?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution).
 
 ### Windsurf, Zed, Goose and other clients
 
@@ -213,7 +213,7 @@ The same actions are available over a plain REST API at `https://www.postel.app/
 
 ## Plans
 
-- The MCP server is included in every paid Postel plan. Starter and Pro start with a 7-day trial for $1; Starter is $29 a month, or $19 a month billed yearly. See [pricing](https://www.postel.app/#pricing).
+- The MCP server is included in every paid Postel plan. Starter and Pro start with a 7-day trial for $1; Starter is $29 a month, or $19 a month billed yearly. See [pricing](https://www.postel.app/?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution#pricing).
 - `generate-post` and `refine-post` use 1 AI credit each. Saving text your assistant wrote uses none.
 - If your workspace requires approval, scheduling submits the post for an owner or admin to approve in Postel.
 - API keys are limited to 60 requests a minute.
@@ -230,11 +230,11 @@ The same actions are available over a plain REST API at `https://www.postel.app/
 
 ## Links
 
-- [Postel MCP server: setup guide and FAQ](https://www.postel.app/postel-mcp-server)
-- [LinkedIn MCP server](https://www.postel.app/linkedin-mcp-server) · [X MCP server](https://www.postel.app/x-mcp-server)
-- [Connect Claude to LinkedIn](https://www.postel.app/connect-claude-to-linkedin) · [to X](https://www.postel.app/connect-claude-to-x)
-- [Social media MCP servers compared](https://www.postel.app/best-social-media-mcp-servers)
-- [Privacy policy](https://www.postel.app/en/legal/privacy-policy) · [Terms](https://www.postel.app/en/legal/terms) · [Contact](https://www.postel.app/en/contact)
+- [Postel MCP server: setup guide and FAQ](https://www.postel.app/postel-mcp-server?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution)
+- [LinkedIn MCP server](https://www.postel.app/linkedin-mcp-server?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution) · [X MCP server](https://www.postel.app/x-mcp-server?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution)
+- [Connect Claude to LinkedIn](https://www.postel.app/connect-claude-to-linkedin?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution) · [to X](https://www.postel.app/connect-claude-to-x?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution)
+- [Social media MCP servers compared](https://www.postel.app/best-social-media-mcp-servers?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution)
+- [Privacy policy](https://www.postel.app/en/legal/privacy-policy?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution) · [Terms](https://www.postel.app/en/legal/terms?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution) · [Contact](https://www.postel.app/en/contact?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution)
 
 <p align="center">
   <img src="assets/viral-library.png" alt="Postel's Viral posts page: posts that took off for creators in your niche, each with a Write my version button" width="880">
@@ -242,4 +242,4 @@ The same actions are available over a plain REST API at `https://www.postel.app/
 
 ## License
 
-The files in this repository are released under the [MIT License](LICENSE). The Postel service itself is covered by its own [terms](https://www.postel.app/en/legal/terms). Postel is made by JRS Content Solutions UG.
+The files in this repository are released under the [MIT License](LICENSE). The Postel service itself is covered by its own [terms](https://www.postel.app/en/legal/terms?utm_source=github-postel-mcp&utm_medium=readme&utm_campaign=agent-distribution). Postel is made by JRS Content Solutions UG.

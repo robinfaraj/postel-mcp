@@ -4,7 +4,7 @@
   "owner": {
     "name": "Postel",
     "email": "robin.faraj@postel.app",
-    "url": "https://www.postel.app"
+    "url": "https://www.postel.app/?utm_source=grok-build&utm_medium=listing&utm_campaign=agent-distribution"
   },
   "plugins": [
     {
@@ -15,7 +15,7 @@
         "type": "local",
         "path": "./"
       },
-      "homepage": "https://www.postel.app/postel-mcp-server",
+      "homepage": "https://www.postel.app/postel-mcp-server?utm_source=grok-build&utm_medium=listing&utm_campaign=agent-distribution",
       "keywords": [
         "postel",
         "social-media",

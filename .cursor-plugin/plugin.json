@@ -1,13 +1,13 @@
 {
   "name": "postel",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Find what's going viral in your niche, write your version in your own voice, and schedule it to X, LinkedIn, Bluesky and Mastodon through your Postel account. Hosted MCP server with OAuth sign-in, plus writing skills.",
   "author": {
     "name": "Postel",
     "email": "robin.faraj@postel.app",
-    "url": "https://www.postel.app"
+    "url": "https://www.postel.app/?utm_source=cursor&utm_medium=listing&utm_campaign=agent-distribution"
   },
-  "homepage": "https://www.postel.app/postel-mcp-server",
+  "homepage": "https://www.postel.app/postel-mcp-server?utm_source=cursor&utm_medium=listing&utm_campaign=agent-distribution",
   "repository": "https://github.com/robinfaraj/postel-mcp",
   "license": "MIT",
   "logo": "assets/icon.png",

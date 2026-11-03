@@ -3,8 +3,8 @@
   "name": "app.postel/postel",
   "title": "Postel",
   "description": "Write posts in your voice from what's going viral in your niche. Schedule to X, LinkedIn and more.",
-  "version": "1.1.0",
-  "websiteUrl": "https://www.postel.app/postel-mcp-server",
+  "version": "1.1.1",
+  "websiteUrl": "https://www.postel.app/postel-mcp-server?utm_source=mcp-registry&utm_medium=listing&utm_campaign=agent-distribution",
   "repository": {
     "url": "https://github.com/robinfaraj/postel-mcp",
     "source": "github"

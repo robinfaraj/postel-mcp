@@ -1,0 +1,70 @@
+{
+  "name": "dsh-postel",
+  "version": "1.1.1",
+  "description": "DeepSeek Harness plugin for Postel: find posts going viral in your niche, write your version in your own voice, and save, schedule or publish it to X, LinkedIn, Bluesky and Mastodon through Postel's hosted MCP server.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib/",
+    "skills/",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "postel",
+    "mcp",
+    "social-media",
+    "viral-posts",
+    "ai-writing",
+    "scheduling",
+    "x",
+    "linkedin",
+    "bluesky",
+    "mastodon"
+  ],
+  "author": {
+    "name": "Postel",
+    "email": "robin.faraj@postel.app",
+    "url": "https://www.postel.app/?utm_source=deepseek-harness&utm_medium=listing&utm_campaign=agent-distribution"
+  },
+  "homepage": "https://github.com/robinfaraj/postel-mcp/tree/main/plugins/dsh-postel#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinfaraj/postel-mcp.git",
+    "directory": "plugins/dsh-postel"
+  },
+  "bugs": {
+    "url": "https://github.com/robinfaraj/postel-mcp/issues"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

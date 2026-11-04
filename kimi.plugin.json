@@ -1,0 +1,26 @@
+{
+  "name": "postel",
+  "version": "1.1.1",
+  "description": "Find what's going viral in your niche, write your version in your own voice, and schedule it to X, LinkedIn, Bluesky and Mastodon through your Postel account.",
+  "keywords": ["postel", "social-media", "viral-posts", "ai-writing", "scheduling", "x", "linkedin", "bluesky", "mastodon", "mcp"],
+  "author": {
+    "name": "Postel",
+    "email": "robin.faraj@postel.app",
+    "url": "https://www.postel.app/?utm_source=kimi-code&utm_medium=listing&utm_campaign=agent-distribution"
+  },
+  "homepage": "https://www.postel.app/postel-mcp-server?utm_source=kimi-code&utm_medium=listing&utm_campaign=agent-distribution",
+  "license": "MIT",
+  "interface": {
+    "displayName": "Postel",
+    "shortDescription": "Viral post research, writing in your voice, and scheduling to X, LinkedIn, Bluesky and Mastodon",
+    "longDescription": "Postel's hosted MCP server finds posts that went viral in your niche, writes your version in your own voice, and schedules or publishes it to X (Twitter), LinkedIn, Bluesky and Mastodon after you approve. Research works without an account; run /mcp-config login postel to sign in for drafting and scheduling. Includes the postel-writing skill.",
+    "developerName": "Postel",
+    "websiteURL": "https://www.postel.app/postel-mcp-server?utm_source=kimi-code&utm_medium=listing&utm_campaign=agent-distribution"
+  },
+  "skills": "./skills/",
+  "mcpServers": {
+    "postel": {
+      "url": "https://www.postel.app/api/mcp"
+    }
+  }
+}

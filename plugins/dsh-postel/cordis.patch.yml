@@ -1,0 +1,37 @@
+# Patch layer contributed by the dsh-postel bundle.
+#
+# Two rows:
+#   1. `postel`      - this package's provider plugin. Reads an optional Postel
+#                      API key (POSTEL_API_KEY by default), exposes `ctx.postel`
+#                      with the MCP endpoint URL and auth headers, and registers
+#                      the `postel-writing` skill.
+#   2. `postel-mcp`  - one @deepseek-ai/dsh-mcp-client instance that connects to
+#                      Postel's hosted MCP server over streamable HTTP and
+#                      registers its tools as mcp__postel__* (search-viral-tweets,
+#                      generate-post, create-post, schedule-post, ...).
+#
+# Configuration (override the `postel` row in your profile's cordis.patch.yml):
+#   apiKeyEnv  - env var holding the Postel API key (default: POSTEL_API_KEY)
+#   apiKey     - inline key; prefer the env var or a .env file in $DSH_HOME
+#   baseUrl    - Postel host (default: https://www.postel.app)
+#   skill      - register the `postel-writing` skill (default: true)
+- insert:
+    - id: postel
+      name: dsh-postel
+      config:
+        apiKeyEnv: POSTEL_API_KEY
+        baseUrl: https://www.postel.app
+    - id: postel-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      inject: [postel]
+      config:
+        transport: streamable-http
+        serverName: postel
+        url: !!js ctx.postel.url
+        headers: !!js ctx.postel.headers
+        failOnStartupError: false
+        reconnect:
+          enabled: true
+          initialDelayMs: 2000
+          maxDelayMs: 30000
+          maxAttempts: 10

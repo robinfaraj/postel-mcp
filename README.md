@@ -52,6 +52,10 @@
 | Gemini CLI | `gemini extensions install https://github.com/robinfaraj/postel-mcp` |
 | Codex CLI | `codex mcp add postel --url https://www.postel.app/api/mcp` |
 | ChatGPT | Custom connector with developer mode, [see below](#chatgpt) |
+| Hermes Agent | `hermes plugins install postel --enable`, [see below](#hermes-agent) |
+| DeepSeek Harness | `dsh plugin --profile web add "github:robinfaraj/postel-mcp#path:/plugins/dsh-postel"` |
+| Kimi Code CLI | `/plugins install https://github.com/robinfaraj/postel-mcp` |
+| Grok Build | `grok plugin marketplace add robinfaraj/postel-mcp` then `grok plugin install postel --trust` |
 | Skills (Codex, Cursor, OpenClaw and 70+ agents) | `npx skills add robinfaraj/postel-mcp` |
 | Anything else | Point it at `https://www.postel.app/api/mcp` |
 
@@ -120,6 +124,36 @@ Then run `/mcp auth postel` inside Gemini CLI to sign in. The extension adds the
 ```bash
 codex mcp add postel --url https://www.postel.app/api/mcp
 codex mcp login postel
+```
+
+### Hermes Agent
+
+```
+hermes plugins install postel --enable
+hermes mcp add postel --url https://www.postel.app/api/mcp --auth oauth --connect-timeout 300
+```
+
+The plugin ([`agent-plugin/`](agent-plugin/), a portable Agent Plugins v1 package) adds the server and the `postel-writing` skill, and asks Hermes to confirm every tool that isn't read-only. The second command signs you in. Until the plugin is in your Hermes catalog, the second command alone gives you the tools.
+
+The same `agent-plugin/` folder works as a Perplexity Computer custom plugin (Plugins, **Add custom**, paste this repository's URL) and as a NanoClaw template.
+
+### DeepSeek Harness
+
+```bash
+dsh plugin --profile web add "github:robinfaraj/postel-mcp#path:/plugins/dsh-postel"
+```
+
+Research works without a key. To draft and schedule, set `POSTEL_API_KEY` before starting dsh. Details: [`plugins/dsh-postel`](plugins/dsh-postel/).
+
+### Kimi Code CLI
+
+In Kimi Code, run `/plugins install https://github.com/robinfaraj/postel-mcp`, then `/reload` and `/mcp-config login postel` to sign in. The plugin (`kimi.plugin.json`) adds the server and the `postel-writing` skill.
+
+### Grok Build
+
+```bash
+grok plugin marketplace add robinfaraj/postel-mcp
+grok plugin install postel --trust
 ```
 
 ### ChatGPT

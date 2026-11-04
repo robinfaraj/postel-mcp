@@ -1,7 +1,7 @@
 {
   "name": "postel",
-  "version": "1.1.1",
-  "description": "Find what's going viral in your niche, write your version in your own voice, and schedule it to X, LinkedIn, Bluesky and Mastodon through your Postel account. Hosted MCP server with OAuth sign-in, plus writing skills.",
+  "version": "1.2.0",
+  "description": "Find what's going viral in your niche, write your version in your own voice, and schedule it to X, LinkedIn, Bluesky, Mastodon, YouTube and TikTok through your Postel account. Hosted MCP server with OAuth sign-in, plus writing skills.",
   "author": {
     "name": "Postel",
     "email": "robin.faraj@postel.app",
@@ -22,6 +22,8 @@
     "linkedin",
     "bluesky",
     "mastodon",
+    "youtube",
+    "tiktok",
     "content",
     "mcp"
   ],

@@ -1,7 +1,7 @@
 {
   "name": "dsh-postel",
-  "version": "1.1.1",
-  "description": "DeepSeek Harness plugin for Postel: find posts going viral in your niche, write your version in your own voice, and save, schedule or publish it to X, LinkedIn, Bluesky and Mastodon through Postel's hosted MCP server.",
+  "version": "1.2.0",
+  "description": "DeepSeek Harness plugin for Postel: find posts going viral in your niche, write your version in your own voice, and save, schedule or publish it to X, LinkedIn, Bluesky, Mastodon, YouTube and TikTok through Postel's hosted MCP server.",
   "type": "module",
   "main": "./lib/index.js",
   "exports": {
@@ -47,7 +47,9 @@
     "x",
     "linkedin",
     "bluesky",
-    "mastodon"
+    "mastodon",
+    "youtube",
+    "tiktok"
   ],
   "author": {
     "name": "Postel",

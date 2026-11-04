@@ -2,7 +2,7 @@
 
 This folder is a portable [Agent Plugins v1](https://agent-plugins.org) package for [Postel](https://www.postel.app/?utm_source=agent-plugins&utm_medium=readme&utm_campaign=agent-distribution): `plugin.json`, `mcp.json` and one skill. It works in Hermes Agent and in other clients that read the format, such as Perplexity Computer custom plugins and NanoClaw.
 
-Postel finds posts that went viral in your niche, writes your version in your own voice, and schedules or publishes it to X (Twitter), LinkedIn, Bluesky and Mastodon after you approve.
+Postel finds posts that went viral in your niche, writes your version in your own voice, and schedules or publishes it to X (Twitter), LinkedIn, Bluesky, Mastodon, YouTube and TikTok after you approve.
 
 ## What's included
 

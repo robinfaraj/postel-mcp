@@ -1,7 +1,7 @@
 {
   "name": "postel",
-  "version": "1.1.1",
-  "description": "Find what's going viral in your niche, write your version in your own voice, and schedule it to X, LinkedIn, Bluesky and Mastodon.",
+  "version": "1.2.0",
+  "description": "Find what's going viral in your niche, write your version in your own voice, and schedule it to X, LinkedIn, Bluesky, Mastodon, YouTube and TikTok.",
   "mcpServers": {
     "postel": {
       "httpUrl": "https://www.postel.app/api/mcp"

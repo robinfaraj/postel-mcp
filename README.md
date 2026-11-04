@@ -31,7 +31,7 @@
 
 - **Start from what's working.** Postel keeps a library of posts that took off for real creators, scored by how far each one beat its author's usual reach. Your assistant searches it by topic and shows you why the top ones worked.
 - **Sound like you.** Drafts come from your voice profile (built from your own X or LinkedIn posts) and the facts you saved, not from a generic template.
-- **Schedule where you post.** X (posts and threads), personal LinkedIn profiles, Bluesky and Mastodon, through each network's official API, after you approve.
+- **Schedule where you post.** X (posts and threads), personal LinkedIn profiles, Bluesky, Mastodon, YouTube and TikTok, through each network's official API, after you approve.
 
 | | |
 |---|---|
@@ -183,6 +183,7 @@ npx skills add robinfaraj/postel-mcp
 - "Find the most-viewed posts about bootstrapping a SaaS and tell me what the best hooks have in common."
 - "Turn this blog post into an X thread and schedule it for Thursday at 3pm New York time."
 - "Write the same announcement for X, LinkedIn and Bluesky, each in its own style, and put the changelog link in the LinkedIn first comment."
+- "Here's my new video: (link). Write the description, attach the video and save it as a YouTube draft so I can set the title in Postel."
 - "Turn these five notes into posts for Monday to Friday at 9am and attach this screenshot to the first one."
 - "Show me what's scheduled for next week."
 
@@ -230,15 +231,18 @@ npx skills add robinfaraj/postel-mcp
 | LinkedIn | Personal profiles: up to 3,000 characters, up to 20 images or one video, and a first comment of up to 1,250 characters posted right after the post |
 | Bluesky | Posts and threads, 300 characters, up to 4 images. Connect with your handle and an app password |
 | Mastodon | Posts and threads on any server, at your server's character limit, with images, a video or a GIF |
+| YouTube | One video per post, uploaded to your channel, with the post text as its description. A vertical or square video of 3 minutes or less becomes a Short. Google asks you to choose the title, privacy (public, unlisted or private) and "made for kids" for every video, so your assistant writes the description, attaches the video from a public link and saves a draft; you set those three in Postel's editor, then your assistant or you schedule it |
+| TikTok | One video per post, with a caption of up to 2,200 characters. TikTok asks you to choose who can view it, whether to allow comments, duets and stitches, and whether it's commercial content for every post, so it works like YouTube: your assistant saves a draft, you finish those settings in Postel's editor, then it's scheduled. Until TikTok finishes reviewing Postel's posting access, TikTok posts go out as "Only me" and your TikTok account has to be set to private |
 
-Publishing to LinkedIn company Pages, Threads, Instagram and YouTube is built and submitted for each network's app review, with no date yet. The in-app viral library already covers X posts and short and long videos from YouTube, TikTok and Instagram creators; over MCP, research covers X posts.
+Publishing to LinkedIn company Pages, Threads and Instagram is built and submitted for each network's app review, with no date yet. The in-app viral library already covers X posts and short and long videos from YouTube, TikTok and Instagram creators; over MCP, research covers X posts.
 
 ## What it doesn't do
 
 - It doesn't read your timeline, feed, mentions, DMs or messages on any network.
 - It doesn't like, reply, follow, comment on other people's posts or send connection requests. It is for publishing your own posts, not outreach.
 - It never asks for your passwords or cookies, and it doesn't drive a browser. Posts go through each network's official API with the permissions you grant.
-- Images and video come from public URLs. Local files and LinkedIn PDF carousels go in the Postel editor.
+- Images and video come from public URLs, up to 100 MB. Local files and LinkedIn PDF carousels go in the Postel editor.
+- It doesn't show YouTube analytics, set thumbnails or playlists, or read video transcripts.
 - Research searches Postel's indexed library, not live X, and the engagement numbers are snapshots.
 
 ## REST API, Zapier, n8n and Make

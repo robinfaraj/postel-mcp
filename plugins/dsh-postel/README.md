@@ -1,6 +1,6 @@
 # dsh-postel
 
-[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) plugin for [Postel](https://www.postel.app/?utm_source=deepseek-harness&utm_medium=readme&utm_campaign=agent-distribution). It connects the agent to Postel's hosted MCP server, so it can search a library of posts that went viral in your niche, write your version in your own voice, and save, schedule or publish posts to X (Twitter), LinkedIn, Bluesky and Mastodon after you approve them.
+[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) plugin for [Postel](https://www.postel.app/?utm_source=deepseek-harness&utm_medium=readme&utm_campaign=agent-distribution). It connects the agent to Postel's hosted MCP server, so it can search a library of posts that went viral in your niche, write your version in your own voice, and save, schedule or publish posts to X (Twitter), LinkedIn, Bluesky, Mastodon, YouTube and TikTok after you approve them.
 
 ## Install
 

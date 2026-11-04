@@ -45,7 +45,7 @@ Never ask the user to paste the key into the chat; have them put it in the setti
 2. Call `search-viral-tweets` with `{"query": "pricing"}`. It works without signing in and returns high-performing X posts.
 3. Call `get-usage`. If it asks for sign-in, complete the OAuth flow (or add the API key) and call it again.
 
-The user connects their X, LinkedIn, Bluesky or Mastodon accounts in Postel under Settings > Channels before the first post. Scheduling and publishing need a paid Postel plan or trial.
+The user connects their X, LinkedIn, Bluesky, Mastodon, YouTube or TikTok accounts in Postel under Settings > Channels before the first post. Scheduling and publishing need a paid Postel plan or trial.
 
 ## Other clients
 

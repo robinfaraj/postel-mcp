@@ -6,14 +6,14 @@
     "url": "https://www.postel.app/?utm_source=claude-code-plugin&utm_medium=listing&utm_campaign=agent-distribution"
   },
   "metadata": {
-    "description": "Postel's plugin for Claude Code: viral post research, writing in your voice, and scheduling to X, LinkedIn, Bluesky and Mastodon."
+    "description": "Postel's plugin for Claude Code: viral post research, writing in your voice, and scheduling to X, LinkedIn, Bluesky, Mastodon, YouTube and TikTok."
   },
   "plugins": [
     {
       "name": "postel",
       "source": "./",
-      "description": "Find what's going viral in your niche, write your version in your own voice, and schedule it to X, LinkedIn, Bluesky and Mastodon through your Postel account.",
-      "version": "1.1.1",
+      "description": "Find what's going viral in your niche, write your version in your own voice, and schedule it to X, LinkedIn, Bluesky, Mastodon, YouTube and TikTok through your Postel account.",
+      "version": "1.2.0",
       "author": {
         "name": "Postel",
         "url": "https://www.postel.app/?utm_source=claude-code-plugin&utm_medium=listing&utm_campaign=agent-distribution"
@@ -30,6 +30,8 @@
         "linkedin",
         "bluesky",
         "mastodon",
+        "youtube",
+        "tiktok",
         "content"
       ]
     }
